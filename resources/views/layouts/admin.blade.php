@@ -244,7 +244,7 @@
 <!-- /#wrapper -->
 
 <!-- jQuery -->
-<script src="{{asset('js/libs.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/libs.js')}}"></script>
 
 </body>
 
