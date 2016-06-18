@@ -37,9 +37,9 @@ class User extends Authenticatable
     }
  
 
-    /* public function isAdmin() {
+     public function isAdmin() {
         
-        if($this->role->name == "adminstrator" && $this->is_active ==1){
+        if($this->role->name == "adminstrator" && $this->is_active == 1 ){
             
             return true; 
             
@@ -48,5 +48,12 @@ class User extends Authenticatable
         return false;
         
     }
-    */
+    
+    public function posts(){
+        
+        return $this->hasMany('App\Post');
+        
+    }
+    
+     
 }
